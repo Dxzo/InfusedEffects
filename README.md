@@ -1,11 +1,11 @@
-ToolAndFoodFx
+InfusedEffects
 =============
 
 **_Ver. 1.2_**
 
 **Added effects for armor!**
 
-ToolAndFoodFX is a plugin that lets you add potion effects to tools/weapons, projectiles, and food, and armor. When you eat food with effects applied, you will get those effects. Hitting a mob with a weapon that has an effect will give those effects to the mob. Same goes for projectiles, like arrows, snowballs, etc. Throw a projectile at a mob to give them the effects. This plugin is really great for adventure maps, mini-games, and regular PvP.
+InfusedEffects is a plugin that lets you add potion effects to tools/weapons, projectiles, and food, and armor. When you eat food with effects applied, you will get those effects. Hitting a mob with a weapon that has an effect will give those effects to the mob. Same goes for projectiles, like arrows, snowballs, etc. Throw a projectile at a mob to give them the effects. This plugin is really great for adventure maps, mini-games, and regular PvP.
 
 
 ##Commands
@@ -18,25 +18,25 @@ This command deletes the specified effect from the item you are holding. If the 
 
 ##Permissions
 
-**toolandfoodfx.command.addeffect.*:** this permission allows users to add all effects to items.
+**InfusedEffects.command.addeffect.*:** this permission allows users to add all effects to items.
 
-**toolandfoodfx.command.addeffect.[effect name]:** this permission allows users to add the specified effect to items.
+**InfusedEffects.command.addeffect.[effect name]:** this permission allows users to add the specified effect to items.
 
-**toolandfoodfx.command.deleffect:** this permission allows users to run the /deleffect command.
+**InfusedEffects.command.deleffect:** this permission allows users to run the /deleffect command.
 
-**toolandfoodfx.command.*:** this permissiongives users all command permissions.
+**InfusedEffects.command.*:** this permissiongives users all command permissions.
 
-**toolandfoodfx.use.weapon:** this permission allows users to use weapons with effects.
+**InfusedEffects.use.weapon:** this permission allows users to use weapons with effects.
 
-**toolandfoodfx.use.food:** this permission allows users to consume food with effects.
+**InfusedEffects.use.food:** this permission allows users to consume food with effects.
 
-**toolandfoodfx.use.projectile:** this permission allows users to throw projectile/arrows with effects.
+**InfusedEffects.use.projectile:** this permission allows users to throw projectile/arrows with effects.
 
-**toolandfoodfx.use.armor:** this permission allows users to use armor with effects.
+**InfusedEffects.use.armor:** this permission allows users to use armor with effects.
 
-**toolandfoodfx.use.*:** this permission allows users to use anything with effects.
+**InfusedEffects.use.*:** this permission allows users to use anything with effects.
 
-**toolandfoodfx.*:** Gives a user all permissions for the plugin.
+**InfusedEffects.*:** Gives a user all permissions for the plugin.
 
 ##What items can have effects
 
