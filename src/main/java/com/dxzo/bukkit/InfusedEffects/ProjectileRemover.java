@@ -24,16 +24,16 @@ public class ProjectileRemover extends BukkitRunnable
         }
         catch (ConcurrentModificationException ex) {}
         for (final Player p : Bukkit.getOnlinePlayers()) {
-            if (p.hasPermission("toolandfoodfx.use.wear")) {
+            if (p.hasPermission("InfusedEffects.use.wear")) {
                 ItemStack[] armorContents;
                 for (int length = (armorContents = p.getInventory().getArmorContents()).length, j = 0; j < length; ++j) {
                     final ItemStack i = armorContents[j];
-                    InfusedEffects.ApplyFX((LivingEntity)p, i, "§3", true);
+                    this.plugin.ApplyIE((LivingEntity)p, i, "§3", true);
                 }
-                if (p.getItemInHand() == null || !(InfusedEffects.isTool(p.getItemInHand().getType()) | p.getItemInHand().getType() == Material.BOW)) {
+                if (p.getItemInHand() == null || !(Utility.isTool(p.getItemInHand().getType()) | p.getItemInHand().getType() == Material.BOW)) {
                     continue;
                 }
-                InfusedEffects.ApplyFX((LivingEntity)p, p.getItemInHand(), "§3", true);
+                this.plugin.ApplyIE((LivingEntity)p, p.getItemInHand(), "§3", true);
             }
         }
     }
