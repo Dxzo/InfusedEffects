@@ -1,9 +1,8 @@
-name: ToolAndFoodFX
-main: com.powder.ToolAndFoodFX.ToolAndFoodFX
-version: 1.6
-description: A plugin that lets you add multiple effects to food, tools, weapons, and armor
-author: thepowderguy
-website: 'http://dev.bukkit.org/bukkit-plugins/toolandfoodfx/'
+name: InfusedEffects
+author: Dxzo
+main: com.dxzo.bukkit.InfusedEffects.InfusedEffects
+version: 2.0
+
 commands:
   addeffect:
     usage: /addeffect <effect type> <level> <duration> [-wear]
@@ -15,37 +14,37 @@ commands:
     aliases: [dele]
   reloadtfx:
     usage: /reloadtfx
-    description: reloads ToolAndFoodFx
+    description: reloads InfusedEffects
     aliases: []
 permissions:
-  toolandfoodfx.command.addeffect.*:
+  infusedeffects.command.addeffect.*:
     default: false
-  toolandfoodfx.command.deleffect:
+  infusedeffects.command.deleffect:
     default: false
-  toolandfoodfx.command.reload:
+  infusedeffects.command.reload:
     default: false
-  toolandfoodfx.use.weapon:
+  infusedeffects.use.weapon:
     default: false
-  toolandfoodfx.use.food:
+  infusedeffects.use.food:
     default: false
-  toolandfoodfx.use.wear:
+  infusedeffects.use.wear:
     default: false
-  toolandfoodfx.use.armor:
+  infusedeffects.use.armor:
     default: false
-  toolandfoodfx.command.*:
-    default: false
-    children:
-      toolandfoodfx.command.addeffect.*: true
-      toolandfoodfx.command.deleffect: true
-  toolandfoodfx.use.*:
+  infusedeffects.command.*:
     default: false
     children:
-      toolandfoodfx.use.weapon: true
-      toolandfoodfx.use.food: true
-      toolandfoodfx.use.wear: true
-      toolandfoodfx.use.armor: true
-  toolandfoodfx.*:
+      infusedeffects.command.addeffect.*: true
+      infusedeffects.command.deleffect: true
+  infusedeffects.use.*:
+    default: false
+    children:
+      infusedeffects.use.weapon: true
+      infusedeffects.use.food: true
+      infusedeffects.use.wear: true
+      infusedeffects.use.armor: true
+  infusedeffects.*:
     default: op
     children:
-      toolandfoodfx.use.*: true
-      toolandfoodfx.command.*: true
+      infusedeffects.use.*: true
+      infusedeffects.command.*: true
